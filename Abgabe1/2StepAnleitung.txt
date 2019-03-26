@@ -1,0 +1,2 @@
+1. Dateipfad zu den Textdokumenten im Code (bei Zeile 16) ändern
+2. Programm in einer Konsole ausführen
