@@ -12,7 +12,7 @@ class Program
         // Build the index
         // Optional: Dateien direkt im Ordner mit Name, ohne Pfad
         //String[] documents = { "1.txt", "2.txt", "3.txt" };
-         String[] documents = Directory.GetFiles(@"D:\Users\Jules-PC\Desktop\SemanticWeb\Text", "*.txt"); 
+         String[] documents = Directory.GetFiles(@"D:\Users\Jules-PC\Desktop\SemanticWeb\Abgabe1\Text", "*.txt"); 
         Dictionary<String, List<String>> index = new Dictionary<String, List<String>>();
 
         foreach (String document in documents)
@@ -66,7 +66,7 @@ class Program
             // 2 Keywords
             else if(keywords.Length == 2)
             {
-                if (index.ContainsKey(keywords[0]) && index.ContainsKey(keywords[0]))
+                if (index.ContainsKey(keywords[0]) && index.ContainsKey(keywords[1]))
                 {
                     List<String> result1 = new List<String>();
                     foreach (String document in index[keywords[0]])
